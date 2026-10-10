@@ -67,7 +67,7 @@ do
   fi
 done
 
-# Insert the completed game stats into the database
+# Insert the completed game stats into the
 INSERT_GAME_RESULT=$($PSQL "INSERT INTO games(user_id, number_of_guesses) VALUES($USER_ID, $GUESS_COUNT)")
 
 echo "You guessed it in $GUESS_COUNT tries. The secret number was $SECRET_NUMBER. Nice job!"
